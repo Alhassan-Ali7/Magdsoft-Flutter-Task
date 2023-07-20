@@ -1,20 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:magdsoft_flutter_task/core/utils/assets.dart';
 
-class FilterItem extends StatelessWidget {
-  FilterItem({Key? key, required this.index}) : super(key: key);
+class FilterItem extends StatefulWidget {
+  const FilterItem({Key? key, required this.index}) : super(key: key);
 
   final int index;
-  String? text;
-  ImageProvider<Object>? imageProvider;
 
+  @override
+  State<FilterItem> createState() => _FilterItemState();
+}
+
+class _FilterItemState extends State<FilterItem> {
+  String? text;
+
+  ImageProvider<Object>? imageProvider;
 
   @override
   Widget build(BuildContext context) {
-    if(index == 0){
+    if(widget.index == 0){
       text = 'All';
       imageProvider =AssetImage(AssetsData.all);
-    }else if(index == 1){
+    }else if(widget.index == 1){
       text = 'Acer';
       imageProvider =AssetImage(AssetsData.acer);
     }else{
