@@ -14,7 +14,7 @@ class IosLogo extends StatelessWidget {
       child: Container(
         height: 40,
         width: 40,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage(AssetsData.ios),
           ),

@@ -25,9 +25,9 @@ class HelpViewComponent extends StatelessWidget {
                 //   height: MediaQuery.of(context).size.height * 0.07,
                 // ),
                 ListView.separated(
-                  physics: ScrollPhysics(),
+                  physics: const ScrollPhysics(),
                   shrinkWrap: true,
-                  separatorBuilder: (context, index) => SizedBox(
+                  separatorBuilder: (context, index) => const SizedBox(
                     height: 20,
                   ),
                   itemCount: state.helpModel[0].help!.length,
@@ -53,13 +53,13 @@ class HelpViewComponent extends StatelessWidget {
               //   height: MediaQuery.of(context).size.height * 0.07,
               // ),
               ListView.separated(
-                physics: ScrollPhysics(),
+                physics: const ScrollPhysics(),
                 shrinkWrap: true,
-                separatorBuilder: (context, index) => SizedBox(
+                separatorBuilder: (context, index) => const SizedBox(
                   height: 20,
                 ),
                 itemCount: 5,
-                itemBuilder: (context, index) => HelpInformation(
+                itemBuilder: (context, index) => const HelpInformation(
                   title: 'waiting',
                   description: 'waiting',
                 ),

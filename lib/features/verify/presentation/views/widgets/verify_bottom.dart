@@ -19,7 +19,7 @@ class VerifyBottom extends StatelessWidget {
             customSnackBar(
               context,state.verifyModel[0].message.toString(),
             );
-            print('hi');
+            //print('hi');
             Navigator.of(context).pushNamed('/help');
           }else{
             customSnackBar(
@@ -45,7 +45,7 @@ class VerifyBottom extends StatelessWidget {
           child: GestureDetector(
             onTap: () {
               BlocProvider.of<VerifyCubit>(context).verify(pram: pram);
-              print(pram);
+              //print(pram);
               //Navigator.of(context).pushNamed('/help');
             },
             child: Container(

@@ -1,4 +1,4 @@
-import 'Products.dart';
+import 'products.dart';
 
 class ProductModel {
   ProductModel({

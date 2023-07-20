@@ -1,9 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-
 import '../../../data/models/Verify_model.dart';
 import '../../../data/repo/verfiy_repo_impl.dart';
-
 part 'verify_state.dart';
 
 class VerifyCubit extends Cubit<VerifyState> {
@@ -21,7 +19,7 @@ class VerifyCubit extends Cubit<VerifyState> {
     );
 
     result.fold((failure) {
-      print(failure.message.toString());
+      //print(failure.message.toString());
       emit(VerifyFailure(failure.message));
     }, (verifyModel) {
       emit(VerifySuccess(verifyModel));

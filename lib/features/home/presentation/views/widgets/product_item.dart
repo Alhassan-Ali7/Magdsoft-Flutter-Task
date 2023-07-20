@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:magdsoft_flutter_task/constant.dart';
-import 'package:magdsoft_flutter_task/core/utils/assets.dart';
-import 'package:magdsoft_flutter_task/features/home/data/models/Product_model.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
 class ProductItem extends StatelessWidget {
-   ProductItem({Key? key, this.company, this.name, this.price, this.image}) : super(key: key);
+   const ProductItem({Key? key, this.company, this.name, this.price, this.image}) : super(key: key);
 
    final String? company;
    final String? name;
@@ -53,10 +51,10 @@ class ProductItem extends StatelessWidget {
               ),
             ),
              Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               child: Text(
                 company!,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w400,
                   color: kPrimaryColor,
@@ -64,10 +62,10 @@ class ProductItem extends StatelessWidget {
               ),
             ),
              Padding(
-              padding:  EdgeInsets.only(left: 8.0, bottom: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 8.0),
               child: Text(
                 name!,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.w400,
                   color: Color(0xFF464646),
@@ -78,10 +76,10 @@ class ProductItem extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                  Padding(
-                  padding:  EdgeInsets.only(left: 8.0, top: 8.0, bottom: 20.0),
+                  padding: const EdgeInsets.only(left: 8.0, top: 8.0, bottom: 20.0),
                   child: Text(
                     price!,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 10,
                       fontWeight: FontWeight.w400,
                       color: Color(0xFF464646),

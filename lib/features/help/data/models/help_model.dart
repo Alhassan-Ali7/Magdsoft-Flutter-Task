@@ -1,4 +1,4 @@
-import 'Help.dart';
+import 'help.dart';
 
 class HelpModel {
   HelpModel({

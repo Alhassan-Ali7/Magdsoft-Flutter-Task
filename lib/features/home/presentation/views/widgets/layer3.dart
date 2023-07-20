@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:magdsoft_flutter_task/core/utils/assets.dart';
 import 'package:magdsoft_flutter_task/features/home/presentation/views/widgets/filter_item.dart';
 
 class Layer3 extends StatelessWidget {

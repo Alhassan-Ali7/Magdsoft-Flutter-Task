@@ -19,13 +19,13 @@ class _FilterItemState extends State<FilterItem> {
   Widget build(BuildContext context) {
     if(widget.index == 0){
       text = 'All';
-      imageProvider =AssetImage(AssetsData.all);
+      imageProvider = const AssetImage(AssetsData.all);
     }else if(widget.index == 1){
       text = 'Acer';
-      imageProvider =AssetImage(AssetsData.acer);
+      imageProvider = const AssetImage(AssetsData.acer);
     }else{
       text = 'Razer';
-      imageProvider =AssetImage(AssetsData.razer);
+      imageProvider = const AssetImage(AssetsData.razer);
     }
     return Stack(
       children: [
@@ -60,10 +60,10 @@ class _FilterItemState extends State<FilterItem> {
           ),
         ),
          Padding(
-          padding: EdgeInsets.only(top: 13, left: 55),
+          padding: const EdgeInsets.only(top: 13, left: 55),
           child: Text(
             text!,
-            style: TextStyle(
+            style: const TextStyle(
               fontWeight: FontWeight.w400,
               fontSize: 20,
             ),

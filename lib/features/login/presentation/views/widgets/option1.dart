@@ -31,11 +31,11 @@ class Option1 extends StatelessWidget {
             color: Colors.white,
           ),
           child: Row(
-            children: [
+            children: const [
               SizedBox(
                 width: 18,
               ),
-              fasebookLogo(),
+              FacebookLogo(),
             ],
           ),
         ),

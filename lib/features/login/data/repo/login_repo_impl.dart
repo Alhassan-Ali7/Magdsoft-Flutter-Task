@@ -1,8 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:magdsoft_flutter_task/core/errors/failure.dart';
-import 'package:magdsoft_flutter_task/features/login/data/models/Login_model.dart';
-
+import 'package:magdsoft_flutter_task/features/login/data/models/login_model.dart';
 import '../../../../core/utils/api_services.dart';
 import 'login_repo.dart';
 
@@ -18,7 +17,7 @@ class LoginRepoImpl implements LoginRepo {
         endPoint: 'verifyPhone',
         pram: pram,
       );
-      print(data);
+     // print(data);
       List<LoginModel> loginModel = [];
         loginModel.add(LoginModel.fromJson(data));
 

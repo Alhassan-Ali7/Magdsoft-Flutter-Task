@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../../../constant.dart';
 
-class fasebookLogo extends StatelessWidget {
-  const fasebookLogo({
+class FacebookLogo extends StatelessWidget {
+  const FacebookLogo({
     super.key,
   });
 

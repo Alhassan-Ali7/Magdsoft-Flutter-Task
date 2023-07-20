@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 
-import '../../../data/models/Product_model.dart';
+import '../../../data/models/product_model.dart';
 import '../../../data/repo/product_repo_impl.dart';
 
 part 'product_state.dart';
@@ -14,7 +14,7 @@ class ProductCubit extends Cubit<ProductState> {
   Future<void> getProduct() async {
     emit(ProductLoading());
     var result = await productRepoImpl.getProduct();
-    print(result);
+    //print(result);
     result.fold((failure) {
       emit(ProductFailure(failure.message));
     }, (product) {

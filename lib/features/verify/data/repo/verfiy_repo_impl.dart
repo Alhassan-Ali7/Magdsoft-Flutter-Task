@@ -19,7 +19,7 @@ class VerifyRepoImpl implements VerifyRepo {
         endPoint: 'otp',
         pram: pram,
       );
-      print(data);
+      //print(data);
       List<VerifyModel> verifyModel = [];
         verifyModel.add(VerifyModel.fromJson(data));
 

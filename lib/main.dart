@@ -2,7 +2,6 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:magdsoft_flutter_task/core/utils/route_generator.dart';
-
 import 'core/utils/api_services.dart';
 import 'core/utils/bloc_observer.dart';
 import 'features/help/data/repo/help_repo_impl.dart';
@@ -37,7 +36,7 @@ class FlutterTask extends StatelessWidget {
         BlocProvider(
             create: (context) => ProductCubit(ProductRepoImpl(ApiService(Dio())))..getProduct()),
       ],
-      child: MaterialApp(
+      child: const MaterialApp(
         debugShowCheckedModeBanner: false,
         initialRoute: '/',
         onGenerateRoute: RouteGenerator.generateRouter,

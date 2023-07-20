@@ -2,7 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:magdsoft_flutter_task/core/errors/failure.dart';
 import '../../../../core/utils/api_services.dart';
-import 'package:magdsoft_flutter_task/features/help/data/models/Help_model.dart';
+import 'package:magdsoft_flutter_task/features/help/data/models/help_model.dart';
 
 import 'help_repo.dart';
 
@@ -17,7 +17,7 @@ class HelpRepoImpl implements HelpRepo {
       var data = await apiService.get(
         endPoint: 'getHelp',
       );
-      print(data);
+      //print(data);
       List<HelpModel> helpModel = [];
       helpModel.add(HelpModel.fromJson(data));
 

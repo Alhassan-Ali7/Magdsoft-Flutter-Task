@@ -7,7 +7,7 @@ import 'package:magdsoft_flutter_task/features/verify/presentation/manager/verif
 import '../../../../../core/utils/functions/custom_snack_bar.dart';
 
 class LoginBottom extends StatelessWidget {
-  LoginBottom({
+  const LoginBottom({
     super.key,
   });
 
@@ -58,7 +58,7 @@ class LoginBottom extends StatelessWidget {
           child: GestureDetector(
             onTap: () {
               BlocProvider.of<LoginCubit>(context).login(pram: pram);
-              print(pram);
+              //print(pram);
             },
             child: Container(
               height: MediaQuery.of(context).size.height * 0.0515,

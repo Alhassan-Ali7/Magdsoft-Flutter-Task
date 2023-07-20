@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:magdsoft_flutter_task/features/home/presentation/views/widgets/search_bar.dart';
-
 import 'filter_bar.dart';
 
 class Layer1 extends StatelessWidget {

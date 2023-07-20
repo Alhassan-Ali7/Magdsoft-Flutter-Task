@@ -7,7 +7,7 @@ class Text1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return const Padding(
       padding: EdgeInsets.only(left: 12.0, bottom: 22),
       child: Text(
         'New Release',

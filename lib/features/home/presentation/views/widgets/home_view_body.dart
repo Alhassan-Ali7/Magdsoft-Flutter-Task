@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:magdsoft_flutter_task/constant.dart';
 import 'package:magdsoft_flutter_task/features/home/presentation/views/widgets/home_view_background.dart';
 import 'package:magdsoft_flutter_task/features/home/presentation/views/widgets/home_view_component.dart';
 

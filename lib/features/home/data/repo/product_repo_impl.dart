@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:magdsoft_flutter_task/core/errors/failure.dart';
 import 'package:magdsoft_flutter_task/features/home/data/repo/product_repo.dart';
 import '../../../../core/utils/api_services.dart';
-import '../models/Product_model.dart';
+import '../models/product_model.dart';
 
 
 class ProductRepoImpl implements ProductRepo {
@@ -17,7 +17,7 @@ class ProductRepoImpl implements ProductRepo {
       var data = await apiService.get(
         endPoint: 'getProducts',
       );
-      print(data);
+      //print(data);
       List<ProductModel> productModel = [];
       productModel.add(ProductModel.fromJson(data));
 

@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:magdsoft_flutter_task/features/login/data/models/Login_model.dart';
+import 'package:magdsoft_flutter_task/features/login/data/models/login_model.dart';
 
 import '../../../../core/errors/failure.dart';
 
